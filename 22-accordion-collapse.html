@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+  <title>Bootstrap Sandbox | Accordion & Collapse</title>
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="mb-5">Accordion & Collapse</h1>
+
+    <!-- Accordion -->
+    <div class="accordion" id="myaccordion">
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+            Accordion 1
+          </button>
+        </h2>
+        <div id="collapseOne" class="accourdion-collapse collapse show" data-bs-parent="#myaccordion">
+          <div class="accordion-body">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates ad atque iure nostrum! Aperiam dolores
+            accusamus fugit autem saepe adipisci optio beatae omnis a, illum tempora, architecto voluptas delectus
+            quidem ab ea in ipsa error laboriosam maxime! Fuga, magnam facere.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+            Accordion 2
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accourdion-collapse collapse" data-bs-parent="#myaccordion">
+          <div class="accordion-body">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates ad atque iure nostrum! Aperiam dolores
+            accusamus fugit autem saepe adipisci optio beatae omnis a, illum tempora, architecto voluptas delectus
+            quidem ab ea in ipsa error laboriosam maxime! Fuga, magnam facere.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+
+        <h2 class="accordion-header">
+          <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+            Accordion 3
+          </button>
+        </h2>
+        <div id="collapseThree" class="accourdion-collapse collapse" data-bs-parent="#myaccordion">
+          <div class="accordion-body">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates ad atque iure nostrum! Aperiam dolores
+            accusamus fugit autem saepe adipisci optio beatae omnis a, illum tempora, architecto voluptas delectus
+            quidem ab ea in ipsa error laboriosam maxime! Fuga, magnam facere.
+          </div>
+        </div>
+      </div>
+    </div>
+    <br /><br />
+
+    <!-- Collapse -->
+    <div class="mb-3">
+      <button class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#myaccordions">
+        Toggle Content
+      </button>
+    </div>
+    <div class="collapse" id="myaccordions">
+      <div class="card">
+        <div class="card-body">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo corrupti odio blanditiis quibusdam consequuntur
+          ullam illum consequatur suscipit eius! Molestias tenetur corrupti laborum dolorum repellendus dolore atque,
+          inventore molestiae ipsum, optio qui minus neque harum facere itaque. Veritatis, sapiente officia?
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Don't go past here -->
+  </div>
+  <div style="margin-top: 350px"></div>
+
+  <script src="./assets/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
